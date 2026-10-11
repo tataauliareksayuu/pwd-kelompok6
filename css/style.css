@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #25233a;
+    background: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar h2 {
+    margin: 0;
+    color: #6558d3;
+}
+
+.navbar h2 span {
+    color: #4e9ee8;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #6558d3;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f0ff;
+}
+
+.hero p:first-child {
+    color: #6558d3;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #6558d3;
+}
+
+.hero p {
+    max-width: 500px;
+    color: #777777;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #6558d3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #4d43aa;
+}
+
+.code-box {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #6558d3;
+    font-size: 60px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px #00000015;
+}
+
+.section {
+    padding: 60px 10%;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.material,
+.quiz,
+.about {
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: white;
+}
+
+.card h3,
+.material h2 {
+    color: #6558d3;
+}
+
+.card p,
+.material p,
+.about p {
+    color: #777777;
+    line-height: 1.7;
+}
+
+.page-title {
+    padding: 70px 10%;
+    background: #f2f0ff;
+}
+
+.page-title h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+.page-title p {
+    color: #777777;
+}
+
+.material {
+    margin-bottom: 20px;
+}
+
+.material pre {
+    padding: 15px;
+    background: #20233b;
+    color: #ffffff;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+
+.quiz label {
+    display: block;
+    padding: 10px;
+    color: #666666;
+}
+
+.quiz #hasil {
+    color: #6558d3;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f2f0ff;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #20233b;
+    color: white;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .code-box {
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+        align-self: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

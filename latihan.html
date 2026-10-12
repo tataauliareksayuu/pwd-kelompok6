@@ -1,64 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan | KodeDasar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
-<body>
+  </head>
 
-<header>
-    <nav class="navbar">
+  <body>
+    <header>
+      <nav class="navbar">
         <h2>Kode<span>Dasar</span></h2>
-
         <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="materi.html">Materi</a></li>
-            <li><a class="active" href="latihan.html">Latihan</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="materi.html">Materi</a></li>
+          <li><a class="active" href="latihan.html">Latihan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
         </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="page-title">
+      </nav>
+    </header>
+    <main>
+      <section class="page-title">
         <h1>Latihan</h1>
         <p>Uji pemahamanmu tentang dasar pemrograman.</p>
-    </section>
-
-    <section class="section">
+      </section>
+      <section class="section">
         <div class="quiz">
-            <h3>HTML digunakan untuk?</h3>
+          <h3>HTML digunakan untuk?</h3>
+          <label>
+            <input type="radio" name="soal1" value="salah" /> Mengatur warna
+            website
+          </label>
+          <label>
+            <input type="radio" name="soal1" value="benar" /> Membuat struktur
+            website
+          </label>
+          <label>
+            <input type="radio" name="soal1" value="salah" /> Membuat database
+          </label>
 
-            <label>
-                <input type="radio" name="soal" value="salah">
-                Mengatur warna website
-            </label>
-
-            <label>
-                <input type="radio" name="soal" value="benar">
-                Membuat struktur website
-            </label>
-
-            <label>
-                <input type="radio" name="soal" value="salah">
-                Membuat database
-            </label>
-
-            <button class="button" onclick="cekJawaban()">
-                Cek Jawaban
-            </button>
-
-            <p id="hasil"></p>
+          <button class="button" onclick="cekJawaban">Cek Jawaban</button>
+          <p id="hasil1"></p>
         </div>
-    </section>
-</main>
-
-<footer>
-    <p>© 2026 KodeDasar | Belajar Pemrograman Dasar</p>
-</footer>
-
-</body>
+        <div class="quiz">
+          <h3>CSS digunakan untuk?</h3>
+          <label>
+            <input type="radio" name="soal2" value="benar" /> Mengatur warna dan
+            tampilan website
+          </label>
+          <label>
+            <input type="radio" name="soal2" value="salah" /> Membuat struktur
+            website
+          </label>
+          <label>
+            <input type="radio" name="soal2" value="salah" /> Membuat database
+          </label>
+          <button class="button" onclick="cekJawaban">Cek Jawaban</button>
+          <p id="hasil2"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 KodeDasar | Belajar Pemrograman Dasar</p>
+    </footer>
+  </body>
 </html>

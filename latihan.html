@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
-  <!-- Ini untuk test -->
-  <!-- penambhan komentar -->
 
   <body>
     <header>
       <nav class="navbar">
         <h2>Kode<span>Dasar</span></h2>
+
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="materi.html">Materi</a></li>
@@ -22,31 +21,39 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="page-title">
         <h1>Latihan</h1>
         <p>Uji pemahamanmu tentang dasar pemrograman.</p>
       </section>
+
       <section class="section">
         <div class="quiz">
           <h3>HTML digunakan untuk?</h3>
+
           <label>
-            <input type="radio" name="soal1" value="salah" /> Mengatur warna
-            website
+            <input type="radio" name="soal" value="salah" />
+            Mengatur warna website
           </label>
+
           <label>
-            <input type="radio" name="soal1" value="benar" /> Membuat struktur
-            website
+            <input type="radio" name="soal" value="benar" />
+            Membuat struktur website
           </label>
+
           <label>
-            <input type="radio" name="soal1" value="salah" /> Membuat database
+            <input type="radio" name="soal" value="salah" />
+            Membuat database
           </label>
 
           <button class="button" onclick="cekJawaban()">Cek Jawaban</button>
-          <p id="hasil1"></p>
+
+          <p id="hasil"></p>
         </div>
       </section>
     </main>
+
     <footer>
       <p>© 2026 KodeDasar | Belajar Pemrograman Dasar</p>
     </footer>
